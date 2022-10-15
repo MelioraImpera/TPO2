@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <!-- Iconos -->
+    <script src="https://kit.fontawesome.com/611f6ef87f.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="contacto.css">
+    <title>🍰Recetario</title>
+</head>
+
+<body>
+    <!-- menu responsive -->
+    
+    <nav>
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+            <i class="fas fa-bars"></i>
+        </label>
+        <a href="#" class="enlace">
+
+            <img src="imagenes/Recetario.png" alt="" class="logo">
+
+        </a>
+        <ul>
+            <li><a class="active" href="index.html">Inicio</a> </li>
+            <li><a href="dulces.html">Dulces</a> </li>
+            <li><a href="saludables.html">Saludables</a> </li>
+            <li><a href="somos.html">¿Quienes somos?</a> </li>
+            <li><a href="contacto.html">Contacto</a> </li>
+        </ul>
+    </nav>
+    
+    
+    <div class="contenedor">
+
+        <form action="" class="form"> 
+            <div class="form-header">
+                <h1 class="form-title">C<span>onsultanos o formá parte de nuestro equipo:</span> </h1>
+            </div>
+            
+            <label for="nombre" class="form-label">Nombre:</label>
+            <input type="text" class="form-input" name="nombre" id="nombre" placeholder="Escriba su nombre">
+            
+            <label for="apellido" class="form-label">Apellido:</label>
+            <input type="text" name="apellido" id="apellido" class="form-input" placeholder="Escriba su apellido">
+            
+            <label for="correo" class="form-label">Correo Electrónico:</label>
+            <input type="email" name="email" id="correo" class="form-input" placeholder="Escriba su correo electrónico">
+
+            <label for="telefono" class="form-label">Teléfono de contacto:</label>
+            <input type="number" name="telefono" id="telefono" class="form-input" placeholder="Escriba su número de contacto">
+            
+            <label for="mensaje" class="form-label">Mensaje</label>
+            <textarea name="mensaje" id="mensaje" cols="16" rows="16" class="form-textarea" placeholder="Aquí escriba su mensaje"></textarea>
+            
+            <input type="submit" value="Enviar consulta" class="btn-submit">
+        </form>
+    </div>
+
+    <footer class="footer">
+
+        <div class="social">
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+        </div>
+
+        <ul class="list">
+            <li>
+                <a href="#">Inicio</a>
+            </li>
+            <li>
+                <a href="#">Recetas Dulces</a>
+            </li>
+            <li>
+                <a href="#">Recetas Saladas</a>
+            </li>
+            <li>
+                <a href="#">¿Quienes somos?</a>
+            </li>
+            <li>
+                <a href="#">Contacto</a>
+            </li>
+
+        </ul>
+        <p class="copyright">&copy; Recetario 2022 - Todos los derechos reservados.</p>
+    </footer>
+</body>
+
+</html>
