@@ -259,4 +259,11 @@ footer{
     background: red;
 
 }
-
+.error{
+    border: solid 1px red;
+    box-shadow: 0 0 10px red;
+}
+.advertencia{
+    color: white;
+    display: block;
+}

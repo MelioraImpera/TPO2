@@ -16,7 +16,7 @@
 
 
 nav{
-    background: coral;
+    background: rgb(114, 248, 203);
     height: 200px;
     width: 100%;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -30,12 +30,11 @@ nav{
 .logo{
     height: 19vh;
 }
-
 nav ul{
     float: right;
     margin-right: 20px;
     margin-top: 70px;
-}
+  }
 
 nav ul li{
     display: inline-block;
@@ -50,9 +49,8 @@ nav ul li a{
     border-radius: 3px;
     text-transform: uppercase;
 }
-
 nav li a.active, nav li a:hover{
-    background: pink;
+    background: rgb(165, 182, 176);;
     transition: 0.5s;
 }
 
@@ -65,59 +63,90 @@ nav li a.active, nav li a:hover{
     cursor: pointer;
     display: none;
 }
-
 #check{
     display: none;
 }
-
-/*responsive*/
-
-@media (max-width: 952px){
-    .enlace{
-        padding-left: 20px;
-    }
-    nav ul li a{
-        font-size: 12px;
-    }
+.seccion-1{
+    background-color: rgb(170, 248, 218);
 }
 
-@media (max-width: 858px){
-    .checkbtn{
-        display: block;
-    }
-    nav ul{
-        position: fixed;
-        width: 100%;
-        height: 100vh;
-        background: pink;
-        top: 130px;
-        left: -100%;
-        text-align: center;
-        transition: all 0.5s;
-    }
-    nav ul li{
-        display: block;
-        margin: 50px 0;
-        line-height: 30px;
-    }
-    nav ul li a{
-        font-size: 20px;
-    }
-    nav ul li a:hover, nav ul li a.active{
-        background: none;
-        color: violet;
-    }
-    #check:checked ~ ul{
-        left:0;
-    }
-
+.container{
+    display: flex;
+    width: 100%;
+    height: 80vh;
+    padding: 4% 2%;
+    box-sizing: border-box;
 }
+
+.box{
+    flex: 1;
+    overflow: hidden;
+    margin: 8px;
+    box-shadow: 0 20px 30px rgba(0, 0, 0, 0.30);
+    line-height: 0;
+    transition: all 300ms;
+}
+
+.box > img{
+    width: 200%;
+    height: calc(100% - 10vh);
+    object-fit: cover;
+    transition: all 300ms;
+}
+
+.box > span{
+    background-color: white;
+    font-size: 35px;
+    font-family: 'galliarde';
+    display: block;
+    text-align: center;
+    height: 10vh;
+    line-height: 2.6;
+}
+
+.box:hover{
+    flex: 50%;
+}
+
+.box:hover > img{
+    width: 100%;
+    height: 100%;
+}
+.titulo{
+    text-align: center;
+    color: rgb(12, 110, 81);
+    background-color: rgb(170, 241, 200);
+    font-size: 50px;
+    font-style: italic;
+    padding: 2rem;
+}
+.receta1, .receta2, .receta3, .receta4{
+    background-color: rgb(170, 248, 218);
+    padding: 1rem;
+}
+.receta1 img, .receta2 img, .receta3 img, .receta4 img{
+    width: 50%;
+    height: 30%;
+    margin-left: 25%;
+}
+.ingredientes{
+    text-align: center;
+    font-style: italic;
+    font-size: x-large;
+}
+.preparacion{
+    text-align: justify;
+    font-size: x-large;
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
 
 /* Pie de página */
 
 footer{
     padding: 30px 0;
-    background-color: coral;
+    background-color: rgb(114, 248, 203);
 }
 
 .footer .social{
@@ -173,5 +202,63 @@ footer{
     margin-top: 15px;
     text-align: center;
     font-size: 13px;
-    color: lightpink;
+    color: rgb(12, 110, 81);
+}
+
+/*responsive*/
+
+@media (max-width: 768px){
+    .checkbtn{
+        display: block;
+    }
+     nav ul{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: rgb(114, 248, 203);;
+        top: 130px;
+        left: -100%;
+        text-align: center;
+        transition: all 0.5s;
+    }
+    nav ul li{
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+    nav ul li a{
+        font-size: 20px;
+    }
+    li a:hover, li a.active{
+        background: none;
+        color: rgb(32, 126, 110);
+    }
+    #check:checked ~ ul{
+        left:0;
+    }
+}
+@media (max-width: 952px){
+    .enlace{
+        padding-left: 20px;
+    }
+    nav ul li a{
+        font-size: 12px;
+    }
+    
+    .titulo{
+        font-size: 20px;
+        font-style: italic;
+        padding: 0%;
+    }
+    .receta1 img, .receta2 img, .receta3 img, .receta4 img{
+        width: 90%;
+        height: 30%;
+        margin-left: 5%;
+    }
+    .ingredientes{
+        font-size: medium;
+    }
+    .preparacion{
+        font-size: medium;
+        margin: 1rem;
 }

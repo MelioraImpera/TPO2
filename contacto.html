@@ -41,14 +41,15 @@
     
     <div class="contenedor">
 
-        <form action="" class="form"> 
+        <form  class="form" id="form"> 
             <div class="form-header">
-                <h1 class="form-title">C<span>onsultanos o formá parte de nuestro equipo:</span> </h1>
+                <h1 class="form-title"><span>Consultanos o formá parte de nuestro equipo:</span> </h1>
             </div>
             
             <label for="nombre" class="form-label">Nombre:</label>
             <input type="text" class="form-input" name="nombre" id="nombre" placeholder="Escriba su nombre">
-            
+            <span></span>
+
             <label for="apellido" class="form-label">Apellido:</label>
             <input type="text" name="apellido" id="apellido" class="form-input" placeholder="Escriba su apellido">
             
@@ -61,10 +62,10 @@
             <label for="mensaje" class="form-label">Mensaje</label>
             <textarea name="mensaje" id="mensaje" cols="16" rows="16" class="form-textarea" placeholder="Aquí escriba su mensaje"></textarea>
             
-            <input type="submit" value="Enviar consulta" class="btn-submit">
+            <input type="submit" value="Enviar consulta" class="btn-submit" onclick="validarFormulario">
+            <p class="validar" id="validar"></p>
         </form>
     </div>
-
     <footer class="footer">
 
         <div class="social">
@@ -94,6 +95,7 @@
         </ul>
         <p class="copyright">&copy; Recetario 2022 - Todos los derechos reservados.</p>
     </footer>
+    <script src="./contacto.js"></script>
 </body>
 
 </html>

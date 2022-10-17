@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="contenedor">
+
+        <form  class="form" id="form" > 
+            <div class="form-header">
+                <h1 class="form-title"><span>Consultanos o formá parte de nuestro equipo:</span> </h1>
+            </div>
+            
+            <label for="nombre" class="form-label">Nombre:</label>
+            <input type="text" class="form-input" name="nombre" id="nombre" placeholder="Escriba su nombre">
+            
+            <label for="apellido" class="form-label">Apellido:</label>
+            <input type="text" name="apellido" id="apellido" class="form-input" placeholder="Escriba su apellido">
+            
+            <label for="correo" class="form-label">Correo Electrónico:</label>
+            <input type="email" name="email" id="correo" class="form-input" placeholder="Escriba su correo electrónico">
+
+            <label for="telefono" class="form-label">Teléfono de contacto:</label>
+            <input type="number" name="telefono" id="telefono" class="form-input" placeholder="Escriba su número de contacto">
+            
+            <label for="mensaje" class="form-label">Mensaje</label>
+            <textarea name="mensaje" id="mensaje" cols="16" rows="16" class="form-textarea" placeholder="Aquí escriba su mensaje"></textarea>
+            
+            <input type="submit" value="Enviar consulta" class="btn-submit" onclick="validarFormulario">
+            <p class="validar" id="validar"></p>
+        </form>
+    </div>
+    <script src="./contacto.js"></script>
+</body>
+</html>

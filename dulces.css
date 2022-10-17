@@ -30,7 +30,6 @@ nav{
 .logo{
     height: 19vh;
 }
-
 nav ul{
     float: right;
     margin-right: 20px;
@@ -71,48 +70,6 @@ nav li a.active, nav li a:hover{
 }
 
 
-/*responsive*/
-
-@media (max-width: 952px){
-    .enlace{
-        padding-left: 20px;
-    }
-    nav ul li a{
-        font-size: 12px;
-    }
-}
-
-@media (max-width: 858px){
-    .checkbtn{
-        display: block;
-    }
-    ul{
-        position: fixed;
-        width: 100%;
-        height: 100vh;
-        background: pink;
-        top: 130px;
-        left: -100%;
-        text-align: center;
-        transition: all 0.5s;
-    }
-    nav ul li{
-        display: block;
-        margin: 50px 0;
-        line-height: 30px;
-    }
-    nav ul li a{
-        font-size: 20px;
-    }
-    li a:hover, li a.active{
-        background: none;
-        color: violet;
-    }
-    #check:checked ~ ul{
-        left:0;
-    }
-
-}
 
 /* Pie de página */
 
@@ -224,4 +181,91 @@ footer{
 .box:hover > img{
     width: 100%;
     height: 100%;
+}
+.titulo{
+    text-align: center;
+    color: rgb(160, 31, 31);
+    background-color: rgb(252, 188, 165);
+    font-size: 50px;
+    font-style: italic;
+    padding: 2rem;
+}
+.receta1, .receta2, .receta3, .receta4{
+    background-color: blanchedalmond;
+    padding: 1rem;
+}
+.receta1 img, .receta2 img, .receta3 img, .receta4 img{
+    width: 50%;
+    height: 30%;
+    margin-left: 25%;
+}
+.ingredientes{
+    text-align: center;
+    font-style: italic;
+    font-size: x-large;
+}
+.preparacion{
+    text-align: justify;
+    font-size: x-large;
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
+/*responsive*/
+
+@media (max-width: 952px){
+    .enlace{
+        padding-left: 20px;
+    }
+    nav ul li a{
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 858px){
+    .checkbtn{
+        display: block;
+    }
+     nav ul{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: pink;
+        top: 130px;
+        left: -100%;
+        text-align: center;
+        transition: all 0.5s;
+    }
+    nav ul li{
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+    nav ul li a{
+        font-size: 20px;
+    }
+    li a:hover, li a.active{
+        background: none;
+        color: violet;
+    }
+    #check:checked ~ ul{
+        left:0;
+    }
+    .titulo{
+        font-size: 20px;
+        padding: 0%;
+    }
+    .receta1 img, .receta2 img, .receta3 img, .receta4 img{
+        width: 90%;
+        height: 30%;
+        margin-left: 5%;
+    }
+    .ingredientes{
+        font-size: medium;
+    }
+    .preparacion{
+        font-size: medium;
+        margin: 1rem;
+    }
+
 }
