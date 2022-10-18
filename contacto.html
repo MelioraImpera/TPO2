@@ -41,9 +41,9 @@
     
     <div class="contenedor">
 
-        <form  class="form" id="form"> 
+        <form  class="form" id="form" action="https://formsubmit.co/d079eae27c5bedd732ad18ed95b2f3a7" method="POST" > 
             <div class="form-header">
-                <h1 class="form-title"><span>Consultanos o formá parte de nuestro equipo:</span> </h1>
+                <h1 class="form-title"><span>Consultanos o formá parte de nuestro equipo:</h1>
             </div>
             
             <label for="nombre" class="form-label">Nombre:</label>
@@ -52,18 +52,24 @@
 
             <label for="apellido" class="form-label">Apellido:</label>
             <input type="text" name="apellido" id="apellido" class="form-input" placeholder="Escriba su apellido">
-            
+            <span></span>
+
             <label for="correo" class="form-label">Correo Electrónico:</label>
             <input type="email" name="email" id="correo" class="form-input" placeholder="Escriba su correo electrónico">
+            <span></span>
 
             <label for="telefono" class="form-label">Teléfono de contacto:</label>
             <input type="number" name="telefono" id="telefono" class="form-input" placeholder="Escriba su número de contacto">
+            <span></span>
             
             <label for="mensaje" class="form-label">Mensaje</label>
             <textarea name="mensaje" id="mensaje" cols="16" rows="16" class="form-textarea" placeholder="Aquí escriba su mensaje"></textarea>
+            <span></span>
             
-            <input type="submit" value="Enviar consulta" class="btn-submit" onclick="validarFormulario">
-            <p class="validar" id="validar"></p>
+            <input type="submit" value="Enviar consulta" class="btn-submit" name="enviar" >
+            <span></span>
+            <input type="hidden" name="_next" value="http://127.0.0.1:5500/contacto.html"><!--Aca hay que poner el link cuando ya este en un host--> 
+            <input type="hidden" name="_captcha" value="false">
         </form>
     </div>
     <footer class="footer">
