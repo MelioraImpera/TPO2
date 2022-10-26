@@ -67,7 +67,7 @@ nav ul li a{
 }
 
 nav li a.active, nav li a:hover{
-    background: pink;
+    background: rgba(255,161,61,255);
     transition: 0.5s;
 }
 
@@ -89,7 +89,7 @@ nav li a.active, nav li a:hover{
 #button-up{
     width: 60px;
     height: 60px;
-    background-color: rgb(160, 31, 31);
+    background-color: rgba(255,161,61,255);
     border-radius: 50%;
     display: flex;
     justify-content: center;
@@ -115,7 +115,8 @@ nav li a.active, nav li a:hover{
 
 footer{
     padding: 30px 0;
-    background-color: coral;
+    margin-bottom: 0px;
+    background-color: rgba(228,103,3,255);
 }
 
 .footer .social{
@@ -171,7 +172,7 @@ footer{
     margin-top: 15px;
     text-align: center;
     font-size: 13px;
-    color: lightpink;
+    color: rgba(251,223,113,255);
 }
 
 /* A partir de aca entran las recetas de la página Dulces */
@@ -224,8 +225,8 @@ footer{
 }
 .titulo{
     text-align: center;
-    color: rgb(160, 31, 31);
-    background-color: rgb(252, 188, 165);
+    color: rgba(228,103,3,255);
+    background-color: rgba(255,161,61,255);
     font-size: 50px;
     font-style: italic;
     padding: 2rem;
@@ -234,6 +235,7 @@ footer{
     background-color: blanchedalmond;
     padding: 1rem;
 }
+/* REVISAR */ 
 .receta1 img, .receta2 img, .receta3 img, .receta4 img{
     width: 50%;
     height: 30%;
@@ -244,6 +246,7 @@ footer{
     font-style: italic;
     font-size: x-large;
 }
+/* VER MARGIN */ 
 .preparacion{
     text-align: justify;
     font-size: x-large;
@@ -271,7 +274,7 @@ footer{
         position: fixed;
         width: 100%;
         height: 100vh;
-        background: pink;
+        background: rgba(255,161,61,255);
         top: 130px;
         left: -100%;
         text-align: center;
@@ -312,7 +315,7 @@ footer{
     #button-up{
         width: 40px;
         height: 40px;
-        background-color: rgb(160, 31, 31);
+        background-color: rgba(255,161,61,255);
         border-radius: 50%;
         display: flex;
         justify-content: center;
