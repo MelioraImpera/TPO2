@@ -12,28 +12,44 @@
     src: url(fonts/Gaillarde\ des\ Collines_PersonalUseOnly.ttf);
 }
 
+@font-face {
+    font-family: 'Hellobunny' ;
+    src: url(fonts/hello_bunny_2/Hello\ Bunny.otf);
+}
+
+@font-face {
+    font-family: 'Louis';
+    src: url(fonts/louis_george_caf/Louis\ George\ Cafe.ttf);
+}
+
+@font-face {
+    font-family: 'Quick';
+    src: url(fonts/quicksand/Quicksand_Book.otf);
+}
 
 
 nav{
     
-    background: coral;
-    height: 200px;
+    background: rgba(228,103,3,255);
+    height: 80px;
     width: 100%;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: 'Quick', Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .enlace{
     position: absolute;
-    padding: 13px 50px;
+    padding-top: 0.5rem;
+    padding-left: 1rem;
 }
 
 .logo{
-    height: 19vh;
+    height: 3.5rem;
+    width: 100%;
 }
 nav ul{
     float: right;
     margin-right: 20px;
-    margin-top: 70px;
+    margin-top: 0px;
 }
 
 nav ul li{
@@ -60,7 +76,7 @@ nav li a.active, nav li a:hover{
     color: white;
     float: right;
     line-height: 80px;
-    margin-right: 40px;
+    margin-right: 1.5rem;
     cursor: pointer;
     display: none;
 }
