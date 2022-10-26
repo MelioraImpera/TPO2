@@ -6,22 +6,35 @@
     list-style: none;
     box-sizing: border-box;
 }
+.bodyIndex{
+    background: rgba(228,103,3,255);
+}
 
 /* navegador */
 
 @font-face {
-    font-family: 'galliarde' ;
-    src: url(fonts/Gaillarde\ des\ Collines_PersonalUseOnly.ttf);
+    font-family: 'Hellobunny' ;
+    src: url(fonts/hello_bunny_2/Hello\ Bunny.otf);
+}
+
+@font-face {
+    font-family: 'Louis';
+    src: url(fonts/louis_george_caf/Louis\ George\ Cafe.ttf);
+}
+
+@font-face {
+    font-family: 'Quick';
+    src: url(fonts/quicksand/Quicksand_Book.otf);
 }
 
 
 
 nav{
     
-    background: coral;
-    height: 200px;
+    background: rgba(228,103,3,255);
+    height: 80px;
     width: 100%;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: 'Quick', Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .enlace{
@@ -30,13 +43,15 @@ nav{
 }
 
 .logo{
-    height: 19vh;
+    height: 3.5rem;
+    
 }
 
 nav ul{
     float: right;
     margin-right: 20px;
-    margin-top: 70px;
+    margin-top: 0px;
+    
 }
 
 nav ul li{
@@ -54,7 +69,7 @@ nav ul li a{
 }
 
 nav li a.active, nav li a:hover{
-    background: pink;
+    background:rgba(255,161,61,255);
     transition: 0.5s;
 }
 
@@ -71,11 +86,14 @@ nav li a.active, nav li a:hover{
 #check{
     display: none;
 }
-
+.h5Compartir{
+ font-size: xxx-large;   
+ padding: 5%;
+}
 /* deco del inicio */
 
 .wrap{
-    width: 100vw;
+    width: 100%;
     height: 100vh;
     display: flex;
     align-items: center;
@@ -86,12 +104,12 @@ nav li a.active, nav li a:hover{
 }
 
 .wrap-texto{
-    font-family: 'galliarde';
+    font-family: 'Hellobunny';
     font-size: 100px;
     font-weight: 100;
     color: #fff;
     text-align: center;
-    width: 50%;
+    width: 100%;
 }
 
 .parrafo{
@@ -116,16 +134,17 @@ nav li a.active, nav li a:hover{
     }
 }
 
+
 @media (max-width: 858px){
     .checkbtn{
         display: block;
     }
     nav ul{
-        position: fixed;
+        position: absolute;
         width: 100%;
         height: 100vh;
-        background: pink;
-        top: 130px;
+        background: rgba(255,161,61,255);
+        top:5rem;
         left: -100%;
         text-align: center;
         transition: all 0.5s;
@@ -140,19 +159,21 @@ nav li a.active, nav li a:hover{
     }
     nav ul li a:hover, nav ul li a.active{
         background: none;
-        color: violet;
+        color: rgba(251,223,113,255);
     }
     #check:checked ~ ul{
         left:0;
+        top: 5rem;
     }
-
+   
 }
 
 /* Pie de página */
 
 footer{
     padding: 30px 0;
-    background-color: coral;
+    margin-bottom: 0px;
+    background-color: rgba(228,103,3,255);
 }
 
 .footer .social{
@@ -208,14 +229,14 @@ footer{
     margin-top: 15px;
     text-align: center;
     font-size: 13px;
-    color: lightpink;
+    color: rgba(251,223,113,255);
 }
 /* descripcion de la web */
 
 section{
     background-color: blanchedalmond;
     width: 100%;
-    height: 60rem;
+   
    
 }
 
@@ -226,37 +247,44 @@ section div{
     align-items: center;
     text-align: center;
     padding-top: 2rem;
+    padding-bottom: 2rem;
 }
 
 
 .contenedor{
     
-    background-color: pink;
+    background-color: rgba(255,161,61,255);
     margin: 4%;
 }
 
 .contenedor h5{
-    font-family: 'galliarde';
+    font-family: 'Hellobunny' ;
     font-size: 5rem;
 }
 
 .contenedor p{
     padding-top: 1rem;
+    padding-left: 2.5%;
+    padding-right: 2.5%;
     font-size: 1rem;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: Verdana , 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     line-height: 1.5rem;
+    text-align:center;
+    
 }
 
 /* slider intento 3 */
 .slide img{
-    height: 500px;
-    width: 700px;
+    height: 550px;
+    width: 100%;
+    object-fit: cover;
 }
 
 .slide{
+   
     width: 100%;
     margin: auto;
-    height: 900px;
+    height: 550px;
     overflow: hidden;
 }
 
@@ -287,7 +315,7 @@ section div{
  }
 
  .ultimo-titulo{
-    font-family: 'galliarde';
+    font-family: 'Hellobunny';
     font-size: 8rem;
     text-align: center;
     background-color: blanchedalmond;
