@@ -14,6 +14,20 @@
 }
 
 
+@font-face {
+    font-family: 'Hellobunny' ;
+    src: url(fonts/hello_bunny_2/Hello\ Bunny.otf);
+}
+
+@font-face {
+    font-family: 'Louis';
+    src: url(fonts/louis_george_caf/Louis\ George\ Cafe.ttf);
+}
+
+@font-face {
+    font-family: 'Quick';
+    src: url(fonts/quicksand/Quicksand_Book.otf);
+}
 
 nav{
     background: rgb(114, 248, 203);
