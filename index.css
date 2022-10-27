@@ -32,9 +32,9 @@
 nav{
     
     background: rgba(228,103,3,255);
-    height: 80px;
+    height: 100px;
     width: 100%;
-    font-family: 'Quick', Verdana, Geneva, Tahoma, sans-serif;
+    font-family: 'Quick';
 }
 
 .enlace{
@@ -69,7 +69,7 @@ nav ul li a{
 }
 
 nav li a.active, nav li a:hover{
-    background:rgba(255,161,61,255);
+    background: rgb(247, 190, 126);
     transition: 0.5s;
 }
 
@@ -123,50 +123,7 @@ nav li a.active, nav li a:hover{
     text-align: center;
 }
 
-/*responsive*/
 
-@media (max-width: 952px){
-    .enlace{
-        padding-left: 20px;
-    }
-    nav ul li a{
-        font-size: 12px;
-    }
-}
-
-
-@media (max-width: 858px){
-    .checkbtn{
-        display: block;
-    }
-    nav ul{
-        position: absolute;
-        width: 100%;
-        height: 100vh;
-        background: rgba(255,161,61,255);
-        top:5rem;
-        left: -100%;
-        text-align: center;
-        transition: all 0.5s;
-    }
-    nav ul li{
-        display: block;
-        margin: 50px 0;
-        line-height: 30px;
-    }
-    nav ul li a{
-        font-size: 20px;
-    }
-    nav ul li a:hover, nav ul li a.active{
-        background: none;
-        color: rgba(251,223,113,255);
-    }
-    #check:checked ~ ul{
-        left:0;
-        top: 5rem;
-    }
-   
-}
 
 /* Pie de página */
 
@@ -321,3 +278,51 @@ section div{
     background-color: blanchedalmond;
     padding-bottom: 3rem;
  }
+ /*responsive*/
+
+@media (max-width: 700px){
+    nav{
+        height: 100px;
+    }
+    .checkbtn{
+        display: block;
+    }
+    nav ul{
+        position: absolute;
+        width: 100%;
+        height: 100vh;
+        background: rgba(248, 190, 123, 0.993);
+        top:5rem;
+        left: -100%;
+        text-align: center;
+        transition: all 0.5s;
+    }
+    nav ul li{
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+    nav ul li a{
+        font-size: 20px;
+        color: rgb(204, 82, 37);
+    }
+    nav ul li a:hover, nav ul li a.active{
+        background: none;
+        color: white;
+    }
+    #check:checked ~ ul{
+        left:0;
+        top: 5rem;
+    }
+   
+}
+@media (max-width: 950px){
+    .enlace{
+        height: 80px;
+        width: 100px;
+        padding: 10px;  
+    }
+    nav ul li a{
+        font-size: 12px;
+    }
+}

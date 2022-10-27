@@ -7,6 +7,20 @@
 }
 
 /* navegador */
+@font-face {
+    font-family: 'Hellobunny' ;
+    src: url(fonts/hello_bunny_2/Hello\ Bunny.otf);
+}
+
+@font-face {
+    font-family: 'Louis';
+    src: url(fonts/louis_george_caf/Louis\ George\ Cafe.ttf);
+}
+
+@font-face {
+    font-family: 'Quick';
+    src: url(fonts/quicksand/Quicksand_Book.otf);
+}
 
 @font-face {
     font-family: 'galliarde' ;
@@ -15,9 +29,9 @@
 
 nav{
     background: coral;
-    height: 200px;
+    height: 100px;
     width: 100%;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: 'Quick', Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .enlace{
@@ -26,13 +40,13 @@ nav{
 }
 
 .logo{
-    height: 19vh;
+    height: 3.5rem;
 }
 
 nav ul{
     float: right;
     margin-right: 20px;
-    margin-top: 70px;
+    margin-top: 0px;
 }
 
 nav ul li{
@@ -51,7 +65,7 @@ nav ul li a{
 }
 
 nav li a.active, nav li a:hover{
-    background: pink;
+    background:rgb(255, 178, 150);
     transition: 0.5s;
 }
 
@@ -71,25 +85,51 @@ nav li a.active, nav li a:hover{
 body{
     background-color: bisque;
 }
-.titulo{
-    background-color: coral;
-    color: blanchedalmond;
+.titulo_nosotros{
+    font-family: 'Hellobunny';
+    font-size: 90px;
+    font-weight: 100;
+    color: coral;
     text-align: center;
-    text-decoration: underline;
-    font-weight: 600;
-    padding-bottom: 1rem;
+    width: 100%;
+    margin: 1rem;
 }
 .descripcion{
+    font-family: 'Quick';
+    font-size: 35px;
     text-align: justify;
-    margin: 1rem;
-    font-size: 16pts;
-    color: black;
+    margin: 2rem;
     padding-bottom: 2rem;
 }
 .video{
-    padding-left: 10%;
     display: inline-block;
-    margin: 2rem;    
+    margin: 2rem;
+    padding-inline-start: 5%;   
+}
+.mapa{
+    width: 100%;
+    background-color:rgb(255, 178, 150);
+    color: rgb(209, 81, 34);
+    display: inline-block;
+}
+.mapa h2{
+   text-align: center;
+   font-size: 60px;
+   font-style: italic;
+   color: blanchedalmond;
+}
+.mapa p{
+    font-family: 'Quick';
+    font-size: 30px;
+    font-weight: 400;
+    text-align: justify;
+    margin: 2rem;
+}
+#map{
+    width: 50%;
+    height: 400px;
+    margin-left: 25%;
+    margin-bottom: 1rem;
 }
 
 /* Pie de página */
@@ -152,7 +192,7 @@ footer{
     margin-top: 15px;
     text-align: center;
     font-size: 13px;
-    color: lightpink;
+    color: rgb(243, 233, 230);
 }
 
 /*-- Carousel de imagenes --*/
@@ -217,16 +257,19 @@ footer{
 
 /*responsive*/
 
-@media (max-width: 858px){
+@media (max-width: 700px){
+    nav{
+        height: 80px;
+    }
     .checkbtn{
         display: block;
     }
     nav ul{
-        position: fixed;
+        position: absolute;
         width: 100%;
         height: 100vh;
-        background: pink;
-        top: 130px;
+        background: rgb(248, 210, 196);
+        top:5rem;
         left: -100%;
         text-align: center;
         transition: all 0.5s;
@@ -238,13 +281,15 @@ footer{
     }
     nav ul li a{
         font-size: 20px;
+        color: rgb(209, 81, 34);
     }
-    nav ul li a:hover, nav ul li a.active{
+    li a:hover, li a.active{
         background: none;
-        color: violet;
+        color: white;
     }
     #check:checked ~ ul{
         left:0;
+        top: 5rem;
     }
 
     /*-- Carousel de imagenes --*/
@@ -302,17 +347,73 @@ footer{
     .slider-btn-right{
         right: 10px;
     }
+    .video{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    .video iframe{
+        width: 80%;
+        margin: 5;
+    }
+    .mapa{
+        width: 100%;
+        height: auto;
+        background-color:rgb(255, 178, 150);
+        color: rgb(209, 81, 34);
+    }
+    .mapa h2{
+       text-align: center;
+       font-size: 40px;
+       font-style: italic;
+       color: blanchedalmond;
+       margin-top: 1rem;
+    }
+    .mapa p{
+        font-family: 'Quick';
+        font-size: 20px;
+        font-weight: 400;
+        text-align: justify;
+        margin: 2rem;
+    }
+    #map{
+        width: 80%;
+        margin: 10%;
+    }
 }
-@media (max-width: 952px){
+@media (max-width: 950px){
+    .titulo_nosotros{
+        font-size: 75px;
+        margin: 1rem;
+    }
+    .descripcion{
+        font-size: 25px;
+    }
     .enlace{
-        padding-left: 20px;
+        height: 80px;
+        width: 100px;
+        padding: 10px;  
     }
     nav ul li a{
         font-size: 12px;
     }
     .video{
-        padding-top: 50px;
-        width: 80%;
-        margin: 1rem;
+        width: 90%;
+        margin: 10%;
     }
+    .mapa h2{
+        text-align: center;
+        font-size: 50px;
+        
+     }
+     .mapa p{
+         font-size: 25px;
+     
+     }
+     #map{
+         width: 70%;
+         margin: 15%;
+     }
+
+    
 }

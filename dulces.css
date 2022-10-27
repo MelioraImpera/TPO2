@@ -31,20 +31,19 @@
 nav{
     
     background: rgba(228,103,3,255);
-    height: 80px;
+    height: 100px;
     width: 100%;
     font-family: 'Quick', Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .enlace{
     position: absolute;
-    padding-top: 0.5rem;
-    padding-left: 1rem;
+    padding: 13px 50px;
 }
 
 .logo{
     height: 3.5rem;
-    width: 100%;
+    
 }
 nav ul{
     float: right;
@@ -67,7 +66,7 @@ nav ul li a{
 }
 
 nav li a.active, nav li a:hover{
-    background: rgba(255,161,61,255);
+    background: rgb(248, 211, 169);;
     transition: 0.5s;
 }
 
@@ -76,7 +75,7 @@ nav li a.active, nav li a:hover{
     color: white;
     float: right;
     line-height: 80px;
-    margin-right: 1.5rem;
+    margin-right: 40px;
     cursor: pointer;
     display: none;
 }
@@ -225,7 +224,7 @@ footer{
 }
 .titulo{
     text-align: center;
-    color: rgba(228,103,3,255);
+    color: rgb(189, 56, 8);
     background-color: rgba(255,161,61,255);
     font-size: 50px;
     font-style: italic;
@@ -255,27 +254,19 @@ footer{
 }
 
 /*responsive*/
-
-@media (max-width: 952px){
-    .enlace{
-        padding-left: 20px;
+@media (max-width: 700px){
+    nav{
+        height: 80px;
     }
-    nav ul li a{
-        font-size: 12px;
-    }
-}
-
-
-@media (max-width: 858px){
     .checkbtn{
         display: block;
     }
      nav ul{
-        position: fixed;
+        position: absolute;
         width: 100%;
         height: 100vh;
         background: rgba(255,161,61,255);
-        top: 130px;
+        top: 5rem;
         left: -100%;
         text-align: center;
         transition: all 0.5s;
@@ -287,17 +278,32 @@ footer{
     }
     nav ul li a{
         font-size: 20px;
+        color: white;
     }
     li a:hover, li a.active{
         background: none;
-        color: violet;
+        color: rgb(189, 56, 8);
     }
     #check:checked ~ ul{
         left:0;
     }
+    
+}
+@media (max-width: 950px){
+    .enlace{
+        height: 80px;
+        width: 100px;
+        padding: 10px;  
+    }
+    nav ul li a{
+        font-size: 12px;
+    }
+    
     .titulo{
         font-size: 20px;
+        font-style: italic;
         padding: 0%;
+        color: blanchedalmond;
     }
     .receta1 img, .receta2 img, .receta3 img, .receta4 img{
         width: 90%;
@@ -311,7 +317,6 @@ footer{
         font-size: medium;
         margin: 1rem;
     }
-    /* Boton "Ir arriva"  */
     #button-up{
         width: 40px;
         height: 40px;
@@ -336,5 +341,4 @@ footer{
         border-color: rgba(0, 0, 0, 0.1);
 
     }
-
 }

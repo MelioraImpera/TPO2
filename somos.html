@@ -20,7 +20,7 @@
         </label>
         <a href="#" class="enlace">
 
-            <img src="imagenes/Recetario.png" alt="" class="logo">
+            <img src="./imagenes/Recetario logo batidor.png" alt="" class="logo">
 
         </a>
         <ul>
@@ -34,7 +34,7 @@
 
     <main class="main">
         
-            <h1 class="titulo">NOSOTROS</h1>
+            <h1 class="titulo_nosotros">Sobre Nosotros</h1>
             <p class="descripcion">Somos un equipo de pasteleros. Pensamos el servicio de postres como un momento especial. Una combinación entre la más alta cocina y un ambiente cálido, donde la vanguardia es el componente principal. En Recetario, aparte de ser una comunidad de pasteleros también contamos con servicio de postres para eventos y fiestas. Pastelería y diseño van juntos, porque prepararlos es también crear momentos. En más de 30 años de experiencia en catering, nuestra meta siguió siendo siempre la misma: renovarnos permanentemente y pensar día a día en nuevas y mejores propuestas para que cada servicio que hacemos no sea uno más, sino uno mejor.
                 Más de una receta, y un solo secreto: la calidez, la confianza y el amor que solo puede brindar una empresa familiar.</p>
         
@@ -64,7 +64,14 @@
     
     <div class="video"><iframe src="https://player.vimeo.com/video/354490763?h=c684a3c02a" width="640" height="360" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe></iframe></div>
     <div class="video"><iframe src="https://player.vimeo.com/video/722897332?h=dbf8576332" width="640" height="360" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe></iframe></div>
-
+    <section class="mapa"><!-- Consumo de API de Google Maps-->
+        <h2>Visitanos</h2>
+        <p>Podés acercarte a nuestra oficina para poder charlar sobre el servicio que tengas interes. Ponete en contacto desde nuestro formulario y programamos una entrevista, así podes comentarnos que tipo de evento necesitas organizar.
+            <br>
+            Estamos en Av. Santa Fe, CABA, Bs. As. - Horarios: L a S de 9:00 a 20:00 Hs.
+        </p>
+        <div id="map"></div>
+    </section>
     <footer class="footer">
         
         <div class="social">
@@ -92,9 +99,13 @@
             </li>
             
         </ul>
-        <p class="copyright">&copy; Recetario 2022 - Todos los derechos reservados.</p>
+        <p class="copyright">&copy; Recetario 2022 - Todos los derechos reservados.
+        </p>
         <!-- Para el carousel de imagenes-->
         <script src="./carousel.js"></script>
     </footer>
+    <!-- Para el conectar con el mapa-->
+<script src="./mapa.js"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBz8gaqHz_GEA-6WQ-bgJb_OiVfKD1BWko&callback=iniciarMap"></script>
 </body>
 </html>
