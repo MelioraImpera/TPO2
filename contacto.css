@@ -240,7 +240,7 @@ footer{
 /*responsive*/
 @media (max-width: 850px){
     nav{
-        height: 80px;
+        height: 100px;
     }
     .checkbtn{
         display: block;
@@ -264,7 +264,7 @@ footer{
         font-size: 20px;
         color: rgb(204, 82, 37);
     }
-    li a:hover, li a.active{
+    nav ul li a:hover, nav ul li a.active{
         background: none;
         color: white;
     }
@@ -272,25 +272,23 @@ footer{
         left:0;
         top: 5rem;
     }
+   .enlace {
+    position:absolute;
+    width: 250px;
+   }
+   .logo {
+    height: 2.5rem;
+    width: 100%;
+   }
+}
+@media (max-width: 1030px){
     .enlace{
         position: absolute;
-        width: 250px;
     }
     .logo {
-        height: 2.5rem;
-        width: 100%;
+        height: 3.5rem;
     }
-    @media (max-width: 1030px){
-        .enlace{
-            position: absolute;  
-        }
-        .logo {
-            height: 3.5rem;
-        }
-        nav ul li a{
-            font-size: 12px;
-        }
+    nav ul li a{
+        font-size: 12px;
     }
-
-    
 }
