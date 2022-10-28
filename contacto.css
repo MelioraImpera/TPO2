@@ -279,10 +279,11 @@ footer{
         height: 2.5rem;
         width: 100%;
     }
-}   
     nav ul li a{
-            font-size: 12px;
-    }
+        font-size: 12px;
+}
+}   
+    
 @media (max-width: 1030px){
         .enlace{
             position: absolute;  
