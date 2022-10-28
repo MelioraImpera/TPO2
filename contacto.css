@@ -28,7 +28,7 @@ nav{
 
 .enlace{
     position: absolute;
-    padding: 13px 50px;
+    padding: 1rem 1rem;
 }
 
 .logo{
@@ -83,6 +83,7 @@ nav li a.active, nav li a:hover{
 
 footer{
     padding: 30px 0;
+    margin-bottom: 0px;
     background-color: rgba(228,103,3,255);
 }
 
@@ -183,7 +184,7 @@ footer{
 
 .contenedor .form .form-label{
     display: contents;
-    color: rgb(238, 178, 160);
+    color:rgba(255,161,61,255);
     font-size: 16px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     position: relative;
@@ -193,7 +194,7 @@ footer{
     background: rgba(0, 0, 0, 0.7);
     border: none;
     outline: none;
-    border-bottom: 2px solid rgb(238, 178, 160);
+    border-bottom: 2px solid rgba(255,161,61,255);
     width: 100%;
     margin-bottom: 20px;
     border-radius: 2px;
@@ -212,7 +213,7 @@ footer{
     width: 100%;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     outline: none;
-    background: coral;
+    background: rgba(255,161,61,255);
     border: none;
     color: white;
     padding: 15px 0;
@@ -237,7 +238,7 @@ footer{
     
 }
 /*responsive*/
-@media (max-width: 700px){
+@media (max-width: 850px){
     nav{
         height: 80px;
     }
@@ -271,11 +272,20 @@ footer{
         left:0;
         top: 5rem;
     }
-    @media (max-width: 950px){
+    .enlace{
+        position: absolute;
+        width: 250px;
+    }
+    .logo {
+        height: 2.5rem;
+        width: 100%;
+    }
+    @media (max-width: 1030px){
         .enlace{
-            height: 80px;
-            width: 100px;
-            padding: 10px;  
+            position: absolute;  
+        }
+        .logo {
+            height: 3.5rem;
         }
         nav ul li a{
             font-size: 12px;
