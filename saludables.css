@@ -64,7 +64,7 @@ nav ul li a{
     text-transform: uppercase;
 }
 nav li a.active, nav li a:hover{
-    background: rgb(148, 212, 190);
+    background-color:  rgb(170, 248, 218);
     transition: 0.5s;
 }
 
