@@ -38,7 +38,7 @@ nav{
 
 .enlace{
     position: absolute;
-    padding: 13px 50px;
+    padding: 1rem 1rem;
 }
 
 .logo{
@@ -255,7 +255,7 @@ footer{
 }
 
 /*responsive*/
-@media (max-width: 700px){
+@media (max-width: 850px){
     nav{
         height: 80px;
     }
@@ -288,13 +288,22 @@ footer{
     #check:checked ~ ul{
         left:0;
     }
+    .enlace {
+        position:absolute;
+        width: 250px;
+       }
+       .logo {
+        height: 2.5rem;
+        width: 100%;
+       }
     
 }
-@media (max-width: 950px){
+@media (max-width: 1030px){
     .enlace{
-        height: 80px;
-        width: 100px;
-        padding: 10px;  
+        position: absolute;  
+    }
+    .logo {
+        height: 3.5rem;
     }
     nav ul li a{
         font-size: 12px;
