@@ -18,6 +18,17 @@
     src: url(fonts/quicksand/Quicksand_Book.otf);
 }
 
+@font-face {
+    font-family: 'Hellobunny' ;
+    src: url(fonts/hello_bunny_2/Hello\ Bunny.otf);
+}
+
+@font-face {
+    font-family: 'Louis';
+    src: url(fonts/louis_george_caf/Louis\ George\ Cafe.ttf);
+}
+
+
 nav{
     background: rgb(32, 126, 110);
     height: 100px;
@@ -100,7 +111,8 @@ nav li a.active, nav li a:hover{
 .box > span{
     background-color: white;
     font-size: 35px;
-    font-family: 'galliarde';
+    font-family: 'HelloBunny';
+    font-weight: bold;
     display: block;
     text-align: center;
     height: 10vh;

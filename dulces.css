@@ -207,7 +207,8 @@ footer{
 .box > span{
     background-color: white;
     font-size: 35px;
-    font-family: 'galliarde';
+    font-family: 'HelloBunny';
+    font-weight: bold;
     display: block;
     text-align: center;
     height: 10vh;
