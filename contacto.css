@@ -75,7 +75,6 @@ nav li a.active, nav li a:hover{
 }
 .contenedor .form .btn-submit:hover{
     background: red;
-
 }
 
 
@@ -264,7 +263,7 @@ footer{
         font-size: 20px;
         color: rgb(204, 82, 37);
     }
-    li a:hover, li a.active{
+    nav ul li a:hover, nav ul li a.active{
         background: none;
         color: white;
     }
@@ -280,7 +279,11 @@ footer{
         height: 2.5rem;
         width: 100%;
     }
-    @media (max-width: 1030px){
+}   
+    nav ul li a{
+            font-size: 12px;
+    }
+@media (max-width: 1030px){
         .enlace{
             position: absolute;  
         }
@@ -291,6 +294,6 @@ footer{
             font-size: 12px;
         }
     }
-
     
-}
+
+
